@@ -50,6 +50,7 @@ function init() {
     // カメラコントローラーを作成
     const controls = new THREE.OrbitControls(camera, canvasElement);
     controls.target.set(0, 0, 0);
+    controls.invertRotation = true;
     controls.enableDamping = true;
     controls.dampingFactor = 0.2;
     controls.autoRotate = true;
