@@ -164,6 +164,9 @@ p{
     text-decoration: underline;
     color: #5c8afc;
 }
+.poster {
+    vertical-align: top;
+}
 footer {
         background-color: #363636;
         width: 100%;
