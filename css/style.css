@@ -141,6 +141,8 @@ h2{
     padding: 0px 0px 0px 42px;
     font-size: 30px;
     color: #3b3b3b;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 h2::before,
 h2::after {
@@ -165,10 +167,12 @@ h2::after {
     border-right: 2px solid #fff;
 }
 p{
+    color: #3b3b3b;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 45px;
     margin-right: 45px;
     font-size: 24px;
-    color: #3b3b3b;
 }
 footer {
         background-color: #363636;
