@@ -44,13 +44,12 @@ function init() {
     scene.add(directionalLight);
  
     // カメラを作成
-    const camera = new THREE.PerspectiveCamera(1000, width / height, 1, 10000);
+    const camera = new THREE.PerspectiveCamera(80, width / height, 1, 10000);
     camera.position.set(0, 0, 180);
  
     // カメラコントローラーを作成
     const controls = new THREE.OrbitControls(camera, canvasElement);
     controls.target.set(0, 0, 0);
-    controls.invertRotation = true;
     controls.enableDamping = true;
     controls.dampingFactor = 0.2;
     controls.autoRotate = true;
