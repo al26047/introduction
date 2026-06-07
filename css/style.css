@@ -167,6 +167,12 @@ p{
 .poster {
     vertical-align: top;
 }
+.square {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid 4px #616161;
+}
+
 footer {
         background-color: #363636;
         width: 100%;
