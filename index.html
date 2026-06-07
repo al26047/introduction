@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/3d.css">
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script>
+    <title>AL26047</title>
+</head>
+<body>
+    <header>
+
+        <div class = "rogo">
+            <img src="image/rogo.jpg" style="width: 90px; height: 90px;">
+        </div>
+
+        <input type="checkbox" id="check" />
+        <label for="check" id="open"><div class = "button"><span class="buttontext" id="textopen">menu open</span></div></label>
+        <label for="check" id="close"><div class = "button"><span class="buttontext" id="textclose">menu close</span></div></label>
+
+        <div class = "header empty"></div>
+
+        <div class = "header full menu" id = home>
+            <a class = "link" href="index.html">
+                <span class="menutext1">ホーム</span>
+            </a>
+        </div>
+
+        <div class = "header empty"></div>
+
+        <div class = "header full menu">
+            <a class = "link" href="https://sites.google.com/shibaura-it.ac.jp/al26047">      
+                <span class="menutext1">別ページ</span>
+            </a>
+        </div>
+
+        <div class = "header empty"></div>
+
+        <div class = "header unfull menu" id="first">
+            <a class = "link" href="page1.html">      
+                <span class="menutext2">過去作品</span>
+            </a>
+        </div>
+
+        <div class = "header empty"></div>
+
+        <div class = "header unfull menu" id="second">
+            <a class = "link" href="page2.html">
+                <span class="menutext2">製作作品</span>
+            </a>
+        </div>
+
+        <div class = "header empty"></div>
+
+        <div class = "header unfull menu" id="third">
+            <a class = "link" href="page3.html">
+                <span class="menutext2">自由記述</span>
+            </a>
+        </div>
+
+        <div class = "header empty"></div>
+
+        <div class = "headerback"></div>
+
+    </header>
+
+    <div id="canvas-container">
+    <canvas id="mycanvas"></canvas>
+    </div>
+
+    <div class="main">
+        
+        <h1>要素大</h1>
+        <h2>要素中</h2>
+        <p>本文</p>
+        <p><b>太文字</b></p>
+        <p><u>下線</u></p>
+
+    </div>
+
+    <footer>
+        <div class="footer-wall">　</div>
+        <div class="footer1">
+            <span class="footer">
+                芝浦工業大学<br>
+                工学部 情報･通信工学課程 情報工学コース 学部１年<br>
+                馬場 勇汰 (ババ ユウタ)
+            </span>
+        </div>
+        <div class="footer-wall"><div class="footer-line"></div>　</div>
+        <div class="footer2">
+            <span class="footer">
+                学籍番号　　：AL26047<br>
+                mail address：al26047@shibaura-it.ac.jp<br>
+                所属サークル：デジクリ・アニメーション研究会
+            </span>
+        </div>
+        <div class="footer-wall"><div class="footer-line"></div>　</div>
+        <div class="footer3">
+            <a class="footer-link" href="index.html">ホーム</a><br>
+            <a class="footer-link" href="https://sites.google.com/shibaura-it.ac.jp/al26047">別ページ</a><br>
+            <a class="footer-link" href="page1.html">過去作品</a><br>
+            <a class="footer-link" href="page2.html">製作作品</a><br>
+            <a class="footer-link" href="page3.html">自由記述</a>
+        </div>
+    </footer>
+    <script src="js/3d-1.js"></script>
+</body>
+
+</html>
