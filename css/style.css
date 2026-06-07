@@ -335,7 +335,7 @@ footer {
         position: relative;
         display: flex;
         justify-content: center;
-        top: 10px;
+        top: 20px;
         font-size: 30px;
         color: #ffffff;
     }
