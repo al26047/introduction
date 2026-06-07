@@ -172,7 +172,6 @@ p{
     margin-right: 50px;
     border: solid 4px #616161;
 }
-
 footer {
         background-color: #363636;
         width: 100%;
@@ -246,8 +245,54 @@ footer {
         top: 10px;
         font-size: 50px;
         color: #ffffff;
-        letter-spacing: 0.15em;
     }
+    .timeline {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .timeline > li {
+        overflow: hidden;
+        position: relative;
+    }
+    .timeline-date {
+        width: 140px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .timeline-content {
+        width: 75%;
+        min-width: 750px;
+        height: 120px;
+        float: left;
+        border-left: 4px #a1a1a1 solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+    }
+    .timeline-content:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: #4b7bc4;
+        position: absolute;
+        left: 174px;
+        top: 24px;
+        border-radius: 50%;
+    }
+    .timeline-content > h3 {
+        font-size: 26px;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+    .timeline-content > p {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
+         
+    }
+
 }
 
 @media (1800px<width) {
@@ -385,6 +430,27 @@ footer {
         position: relative;
         top: 0px;
         margin-left: 20px;
+    }
+    .timeline {
+        list-style: none;
+        padding-left: 0;
+    }
+    .timeline > li {
+        margin-left: 0;
+    }
+    .timeline-date {
+        margin-left: 10px;
+        padding-bottom: 0;
+    }
+    .timeline-content > h3 {
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .timeline-content > p {
+        margin-left: 36px;
+        font-size: 22px;
     }
     footer {
         height: 130px;
