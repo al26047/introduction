@@ -53,7 +53,7 @@ function init() {
     controls.enableDamping = true;
     controls.dampingFactor = 0.2;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 5.0;
+    controls.autoRotateSpeed = 2.0;
     controls.enableZoom = false;
     controls.enablePan = false;
     controls.minPolarAngle = Math.PI / 2;
