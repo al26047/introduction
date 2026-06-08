@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/3d.css">
+    <script src="https://unpkg.com/three@0.147.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.142.0/examples/js/loaders/GLTFLoader.js"></script>
     <title>AL26047</title>
 </head>
 <body>
@@ -106,6 +110,16 @@
         割と多趣味です。自分でそうなろうとしたわけではないですが、広く浅くを体現してる感じです。</p>
         <h2>3Dモデリング</h2>
         <p>独学でblenderをやってます。すごくできるわけではないです。</p>
+
+        <div class="three">
+        <div id="three2">
+        <canvas id="three2-1"></canvas>
+        </div>
+        <div id="three3">
+        <canvas id="three3-1"></canvas>
+        </div>
+        </div>
+
         <p>VroidStudioで作成したVRMアバターをblenderとunityを使っていじくったりとかもしてます。<br>
         (3Dモデリングかは微妙ですが他に書くところもないのでここに書いてます)</p>
         <h2>3Dプリント</h2>
@@ -148,6 +162,10 @@
             <a class="footer-link" href="page3.html">自由記述</a>
         </div>
     </footer>
+
+    <script src="js/3d-2.js"></script>
+    <script src="js/3d-3.js"></script>
+
 </body>
 
 </html>

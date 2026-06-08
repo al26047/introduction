@@ -1,14 +1,14 @@
 window.addEventListener("DOMContentLoaded", init);
 function init() {
     // レンダラーを作成
-    const canvasElement = document.querySelector('#three1-1');
+    const canvasElement = document.querySelector('#three3-1');
     const renderer = new THREE.WebGLRenderer({
         antialias: true,
         canvas: canvasElement,
     });
  
     // サイズ指定
-    const container = document.querySelector('#three1');
+    const container = document.querySelector('#three3');
     const width = container.clientWidth;
     const height = container.clientHeight;
 
@@ -30,11 +30,11 @@ function init() {
     }
     // シーンを作成
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color('#1b1b1b');
+    scene.background = new THREE.Color('#252525');
  
     // 環境光源を作成
     const ambientLight = new THREE.AmbientLight(0xffffff);
-    ambientLight.intensity = 0.7;
+    ambientLight.intensity = 1.2;
     scene.add(ambientLight);
  
     // 平行光源を作成
@@ -44,12 +44,12 @@ function init() {
     scene.add(directionalLight);
  
     // カメラを作成
-    const camera = new THREE.PerspectiveCamera(80, width / height, 1, 10000);
-    camera.position.set(0, 0, 180);
+    const camera = new THREE.PerspectiveCamera(40, width / height, 1, 10000);
+    camera.position.set(0, -100, 1000);
  
     // カメラコントローラーを作成
     const controls = new THREE.OrbitControls(camera, canvasElement);
-    controls.target.set(0, 0, 0);
+    controls.target.set(0, -100, 0);
     controls.enableDamping = true;
     controls.dampingFactor = 0.2;
     controls.autoRotate = true;
@@ -72,10 +72,10 @@ function init() {
     const loader = new THREE.GLTFLoader();
     let model = null;
     loader.load(
-    '3dmodel/moon.glb',
+    '3dmodel/kurage.glb',
     function (glb) {
         model = glb.scene;
-        model.name = "moon";
+        model.name = "kurage";
         model.scale.setScalar(100);
         model.position.set(0, 0, 0);
         scene.add(glb.scene);
