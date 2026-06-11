@@ -30,7 +30,7 @@ function init() {
     }
     // シーンを作成
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color('#ffffff');
+    scene.background = new THREE.Color('#c1c1c1');
  
     // 環境光源を作成
     const ambientLight = new THREE.AmbientLight(0xffffff);
