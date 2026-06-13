@@ -151,18 +151,15 @@ h2::after {
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
 }
-p{
-    color: #3b3b3b;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 45px;
-    margin-right: 45px;
-    font-size: 24px;
-}
 .link {
     text-decoration: none;
     text-decoration: underline;
     color: #5c8afc;
+}
+.poster {
+    vertical-align: top;
+    margin-left: 20px;
+    border: solid 1px #000000;
 }
 .photo {
     vertical-align: top;
@@ -247,6 +244,14 @@ footer {
         font-size: 50px;
         color: #ffffff;
     }
+    p{
+    color: #3b3b3b;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 24px;
+    } 
     .timeline {
         padding-left: 0px;
         padding-right: 0px;
@@ -431,6 +436,12 @@ footer {
         position: relative;
         top: 0px;
         margin-left: 20px;
+    }
+    p{
+    color: #3b3b3b;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
     }
     .timeline {
         list-style: none;
