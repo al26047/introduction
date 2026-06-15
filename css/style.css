@@ -98,17 +98,17 @@ header {
     display: none;
 }
 body {
-        position: absolute;
-        margin: 0; padding: 0;
-        color:#373b3e;
-        top: 120px;
-        left: 0;
-        width: 100%;
+    position: absolute;
+    margin: 0; padding: 0;
+    color:#373b3e;
+    top: 120px;
+    left: 0;
+    width: 100%;
 }
 
 .main {
-        margin-left: 10px;
-        margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     }
 h1{
     margin-bottom: 0px;
@@ -116,7 +116,6 @@ h1{
     border-left: 8px solid #3774c5;
     background-color: #f2f2f2;
     font-weight: 600;
-    font-size: 36px;
     color: #3b3b3b;
 }
 h2{
@@ -124,7 +123,6 @@ h2{
     align-items: center;
     position: relative;
     padding: 0px 0px 0px 42px;
-    font-size: 30px;
     color: #3b3b3b;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -158,16 +156,19 @@ h2::after {
 }
 .poster {
     vertical-align: top;
-    margin-left: 20px;
+    width: min(300px , 90%);
+    margin-left: min(20px , 5%);
     border: solid 1px #000000;
 }
 .photo {
     vertical-align: top;
-    margin-left: 20px;
+    margin-left: min(5% , 10px);
+    margin-bottom:10px;
+    max-width: 90%;
+    height: auto;
+    max-height: 300px;
 }
 .square {
-    margin-left: 50px;
-    margin-right: 50px;
     border: solid 4px #616161;
 }
 footer {
@@ -244,6 +245,12 @@ footer {
         font-size: 50px;
         color: #ffffff;
     }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-size: 30px;
+    }
     p{
     color: #3b3b3b;
     margin-top: 15px;
@@ -298,7 +305,10 @@ footer {
         margin-bottom: 0;
          
     }
-
+    .square {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 @media (1800px<width) {
@@ -437,6 +447,12 @@ footer {
         top: 0px;
         margin-left: 20px;
     }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 24px;
+    }
     p{
     color: #3b3b3b;
     margin-top: 15px;
@@ -453,16 +469,22 @@ footer {
     .timeline-date {
         margin-left: 10px;
         padding-bottom: 0;
+        font-size: 20px;
     }
     .timeline-content > h3 {
-        font-size: 30px;
+        font-size: 24px;
         margin-left: 30px;
         margin-top: 0;
         margin-bottom: 0;
     }
     .timeline-content > p {
         margin-left: 36px;
-        font-size: 22px;
+        font-size: 16px;
+    }
+    .square {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     footer {
         height: 130px;
